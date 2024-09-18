@@ -14,7 +14,7 @@ var gameover = 0;
 
 
 //detecting key press to start the game
-$(document).keypress(function() {
+$(document).on('keypress touchstart', function() {
     if (!started) {
         //The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
         $("#level-title").text("Level " + level);
